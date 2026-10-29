@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=MedievalSharp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    background: linear-gradient(
+        180deg,
+        #17163e,
+        #514078,
+        #17152f
+    );
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #c6b7ff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+h1 {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 55px;
+    color: #ffdf9e;
+    margin: 10px 0;
+    text-shadow: 0 0 25px #ffca78;
+}
+
+.description {
+    color: #ddd7f1;
+    margin-bottom: 22px;
+}
+
+.game-container {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #a99aff;
+    border-radius: 20px;
+    box-shadow: 0 0 35px #8e79ff55;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    touch-action: manipulation;
+}
+
+.score {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.score-box {
+    background: #17142bdd;
+    border: 1px solid #ffffff44;
+    padding: 8px 15px;
+    border-radius: 12px;
+}
+
+.score-box small {
+    display: block;
+    font-size: 10px;
+    color: #c5bce8;
+    letter-spacing: 1px;
+}
+
+.score-box span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffe5a9;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #11102c66;
+}
+
+.panel {
+    width: 100%;
+    max-width: 370px;
+    padding: 25px;
+    background: #17142bee;
+    border: 1px solid #f8d99a88;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #0005;
+}
+
+.owl-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.panel h2 {
+    font-family: 'MedievalSharp', cursive;
+    color: #ffdf9e;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.panel p {
+    color: #ddd7f1;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 13px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #292044;
+    background: linear-gradient(
+        135deg,
+        #ffe8ac,
+        #f5b85e
+    );
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffdf9e66;
+}
+
+.instruction {
+    color: #c5bce8;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .score-box {
+        padding: 6px 10px;
+    }
+}

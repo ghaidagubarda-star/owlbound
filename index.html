@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owlbound - Fantasy Flight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <p class="subtitle">A Magical Fantasy Adventure</p>
+            <h1>🦉 Owlbound</h1>
+            <p class="description">
+                Terbanglah melewati gerbang kristal di dunia fantasi!
+            </p>
+        </header>
+
+        <div class="game-container">
+            <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+            <div class="score">
+                <div class="score-box">
+                    <small>BEST SCORE</small>
+                    <span id="best">0</span>
+                </div>
+
+                <div class="score-box">
+                    <small>SCORE</small>
+                    <span id="score">0</span>
+                </div>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div class="panel">
+                    <div class="owl-icon">🦉✨</div>
+                    <h2 id="gameTitle">The Moonlit Flight</h2>
+
+                    <p id="gameDescription">
+                        Bantu burung hantu melewati rintangan
+                        di dunia fantasi. Jangan sampai menabrak!
+                    </p>
+
+                    <button id="startButton">Mulai Terbang ✨</button>
+                </div>
+            </div>
+        </div>
+
+        <p class="instruction">
+            Tekan SPACE, tombol ↑, klik, atau tap layar untuk terbang!
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
